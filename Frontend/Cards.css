@@ -1,0 +1,134 @@
+/* Container for 4 Cards in a Row */
+.insurance-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+/* Card Styling */
+.insurance-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 23%; /* 4 cards per row */
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px; /* Adjusted for better layout */
+  position: relative;
+}
+
+.insurance-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Centered & Smaller Logo */
+.insurance-logo {
+  width: 90px; /* Smaller size */
+  height: 60px;
+  margin: 0 auto 10px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Titles & Description */
+.insurance-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.insurance-type {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.insurance-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+
+/* Price at Bottom Center */
+.insurance-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: auto;
+}
+
+/* Buttons */
+.details-btn, .cart-btn {
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+}
+
+.details-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.cart-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.details-btn:hover {
+  background-color: #545b62;
+}
+
+.cart-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 1200px) {
+  .insurance-card {
+    width: 30%; /* 3 cards per row */
+  }
+}
+
+@media (max-width: 992px) {
+  .insurance-card {
+    width: 45%; /* 2 cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .insurance-card {
+    width: 100%; /* 1 card per row */
+  }
+
+  .insurance-logo {
+    width: 80px;
+    height: 50px;
+  }
+}

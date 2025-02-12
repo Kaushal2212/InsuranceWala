@@ -1,0 +1,100 @@
+.policy-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+
+.policy-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.policy-logo {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.policy-info {
+  flex: 1;
+}
+
+.policy-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.policy-description {
+  font-size: 16px;
+  color: #666;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.policy-premium {
+  font-size: 22px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.policy-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.policy-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .policy-container {
+      max-width: 90%;
+      padding: 15px;
+  }
+
+  .policy-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .policy-logo {
+      margin: 0 auto 15px;
+  }
+
+  .policy-title {
+      font-size: 22px;
+  }
+
+  .policy-premium {
+      font-size: 20px;
+  }
+
+  .policy-button {
+      font-size: 14px;
+  }
+}

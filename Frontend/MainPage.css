@@ -1,0 +1,70 @@
+/* HeroStyle.css */
+.hero {
+    background-image: url('https://www.humanitas.net/content/uploads/2023/11/medicine-5.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 20px;
+    display: flex;
+    align-items: flex-start; /* Push content upwards */
+  }
+  
+  .hero-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+  }
+  
+  .hero-heading {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .para-line {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .inner-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .inner-col {
+    flex: 1;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-blue {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-yellow {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  

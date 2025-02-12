@@ -1,0 +1,175 @@
+
+/*------------------ Breadcrumb styling --------------------*/
+
+.breadcrumbs1
+{
+	background: linear-gradient(rgba(150, 60, 221, 0.1), rgba(17, 17, 69, 0.8)), url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?cs=srgb&dl=pexels-fauxels-3183150.jpg&fm=jpg');
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.breadcrumb1-container
+{
+	height: 34vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1.5rem;
+}
+
+.breadcrumb1-container .hero-heading
+{
+	font-size: 3rem;
+}
+/*------------------ Breadcrumb styling --------------------*/
+
+
+
+/*------------------------ Map styling ----------------------------*/
+.map-location
+{
+	margin: 1rem 0;
+	display: flex;
+	align-items: center;
+}
+
+.map-location ion-icon
+{
+	font-size: 2.6rem;
+	color: var(--yellow-color);
+}
+/*------------------------ Map styling ----------------------------*/
+
+
+
+/*------------------------------ Contact Info ---------------------------*/
+.contact-info {
+    background: linear-gradient(rgba(10, 17, 79, 0.8), rgba(10, 17, 79, 0.8)), url("https://images.pond5.com/silhouetted-happy-asian-family-playing-footage-107005558_iconl.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust to 'contain' or 'cover' based on visibility preferences */
+    padding: 1rem 0; /* Increase padding for a larger section */
+  }
+  
+  .contact-info .container {
+    text-align: center;
+    padding: 6rem 0; /* Adjust padding for more vertical spacing */
+  }
+  
+  .contact-info .container .row {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; /* Increase gap for better spacing between elements */
+  }
+  
+  .contact-info .container .row .col ion-icon {
+    color: var(--yellow-color);
+    font-size: 4.5rem; /* Increase icon size for prominence */
+  }
+  
+  .info-name {
+    font-size: 2rem; /* Make text larger */
+    font-weight: 700;
+    margin-bottom: 0.5rem; /* Add spacing below the name */
+  }
+  
+  .info-detail {
+    font-size: 1.5rem; /* Increase font size for better readability */
+    font-weight: 400;
+    line-height: 1.8; /* Add line spacing */
+  }
+  
+/*------------------------------ Contact Info ---------------------------*/
+
+
+
+
+/*---------------------------------- Branches ---------------------------*/
+.branch-img
+{
+	margin: 1rem 0;
+}
+
+.branch-card
+{
+	margin: 2rem 0;
+	padding: 1.6rem;
+	display: flex;
+	flex-direction: column;
+	grid-gap: 0.8rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+/*---------------------------------- Branches ---------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------*/
+/*----------------------------- Desktop screen styling ----------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 789px)
+{
+	/*----------- Breadcrumb styling ----------*/
+	.breadcrumb1-container 
+	{
+		height: 50vh;
+	}
+
+
+	/*------------ Map styling ----------------*/
+	.map .container
+	{
+		max-width: 960px;
+		text-align: center;
+	}
+
+	.map-location
+	{
+		justify-content: center;
+	}
+
+
+	/*-------------- Contact info ---------------*/
+	/*.contact-info .container
+	{
+		padding: 8rem 0;
+	}*/
+
+	.contact-info .container .row
+	{
+		flex-direction: row;
+	}
+
+	.contact-info .container .row .col ion-icon 
+	{
+		color: var(--yellow-color);
+		font-size: 5rem;
+	}
+
+	.info-name 
+	{
+		font-size: 2.6rem;
+	}
+
+	.info-detail 
+	{
+		font-size: 1.6rem;
+	}
+
+
+	/*-------------------------- Branches styling -----------------------*/
+	.branch-card 
+	{
+		padding: 4rem;
+	}
+}

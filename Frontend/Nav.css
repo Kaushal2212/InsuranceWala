@@ -1,0 +1,305 @@
+/*--------------------- Google Fonts -------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* --------------------- Global Variables ---------------- */
+:root {
+	/* Colors */
+	--primary-color: #963cdd;
+	--secondary-color: #1668b8;
+	--third-color: #000000;
+	--fourth-color: #ffffff;
+	--blue-color: #2540ce;
+	--yellow-color: #fcb900;
+
+	/* Font Sizes */
+	--heading-font-size: 1.5rem;
+	--paragraph-font-size: 1rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
+	padding: 1rem 2rem;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* -------------------- Logo -------------------- */
+.brand img {
+	width: 200px; /* Smaller logo */
+	height: auto;
+}
+
+/* -------------------- Navigation Bar ------------------- */
+nav {
+	background: var(--fourth-color);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+.menu-container {
+	width: 1152px;
+	max-width: 90%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1rem;
+}
+
+.nav-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.nav-wrapper ul.nav-list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.nav-wrapper ul.nav-list li {
+	padding: 0.5rem 0;
+	position: relative;
+}
+
+.nav-wrapper ul.nav-list li a {
+	color: var(--third-color);
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: 500;
+	transition: color 0.3s ease-in-out;
+}
+
+.nav-wrapper ul.nav-list li a:hover,
+.nav-wrapper ul.nav-list li.active a {
+	color: var(--blue-color);
+}
+
+/* Dropdown Menu */
+nav ul.dropdown-list {
+	list-style: none;
+	background: #f5f5f5;
+	position: absolute;
+	padding: 8px 16px;
+	top: 100%;
+	left: 0;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease-in-out;
+	border-radius: 4px;
+}
+
+.nav-wrapper ul.nav-list li:hover .dropdown-list {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+/* Hamburger Menu (Mobile) */
+.hamberger {
+	display: none;
+	cursor: pointer;
+}
+
+.hamberger span {
+	display: block;
+	background: var(--third-color);
+	width: 28px;
+	height: 3px;
+	margin: 5px 0;
+	transition: all 0.3s ease;
+}
+
+.mobile .hamberger {
+	display: block;
+}
+
+.mobile ul.nav-list {
+	background: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	padding: 80px 20px;
+	gap: 20px;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.mobile ul.nav-list li a {
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+.mobile .hamberger.active span:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile .hamberger.active span:nth-child(2) {
+	opacity: 0;
+}
+
+.mobile .hamberger.active span:nth-child(3) {
+	transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ------------------ Scroll to Top ------------------ */
+#topBtn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	background: var(--blue-color);
+	color: var(--fourth-color);
+	border: none;
+	cursor: pointer;
+	display: none;
+	border-radius: 50%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#topBtn:hover {
+	background: var(--yellow-color);
+}
+
+/* Navbar container */
+nav {
+	background-color: #fff; /* White background for the navbar */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for the navbar */
+	padding: 10px 20px;
+	position: sticky;
+	top: 0;
+	z-index: 10; /* Ensure it stays on top */
+  }
+  
+  /* Navbar brand/logo */
+  .nav-wrapper .brand a img {
+	height: 40px; /* Set a fixed height for the logo */
+	width: auto;
+  }
+  
+  /* Navbar list and items */
+  .nav-list {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .nav-list li {
+	margin: 0 15px; /* Space out each item */
+  }
+  
+  .nav-list a {
+	text-decoration: none;
+	color: #333; /* Dark text color for readability */
+	font-weight: 600;
+	font-size: 16px;
+	transition: color 0.3s ease;
+  }
+  
+  /* Hover effect on nav links */
+  .nav-list a:hover {
+	color: #ff6600; /* Orange color for hover effect */
+  }
+  
+  /* Welcome container for user info */
+  .welcome-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between; /* Ensures welcome text and logout button are spaced apart */
+	gap: 30px;
+	position: relative;
+	font-size: 18px;
+	color: #333; /* Dark color for text */
+	cursor: pointer;
+	width: 200px; /* Set a width to control the spacing of the content */
+  }
+  
+  /* Welcome text */
+  .welcome-text {
+	font-weight: 600;
+	transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Logout button container */
+  .logout-container {
+	display: inline-block;
+	background-color: #e60000; /* Red background color for the logout button */
+	padding: 10px 20px;
+	border-radius: 6px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+  }
+  
+  /* Logout link styling */
+  .logout-link {
+	text-decoration: none;
+	color: #ff6600;
+	font-size: 16px;
+	font-weight: 600;
+	transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect for logout link */
+  .logout-link:hover {
+	transform: scale(1.1);
+  }
+  
+  /* Login link when user is not logged in */
+  .login-link {
+	color: #333;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	transition: color 0.3s ease;
+  }
+  
+  /* Hover effect for login link */
+  .login-link:hover {
+	color: #ff6600;
+  }
+  
+  
+
+/* ------------------- Responsive Design ----------------- */
+@media (max-width: 768px) {
+	.nav-wrapper ul.nav-list {
+		display: none;
+	}
+
+	.hamberger {
+		display: block;
+	}
+
+	.mobile .nav-list {
+		display: flex;
+	}
+}
