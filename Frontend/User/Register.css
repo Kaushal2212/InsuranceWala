@@ -1,0 +1,144 @@
+/* Wrapper to center the form */
+.register-wrapper {
+    background-image: url('https://marketplace.canva.com/EAF5FxQlSGQ/1/0/1600w/canva-blue-and-white-illustrated-sky-and-airplane-desktop-wallpaper-zYA4XGHAYo0.jpg'); /* Background image */
+  background-size: cover; /* Ensures the image covers the whole container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  min-height: 100vh; /* Ensures the wrapper takes full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+  
+  /* Registration Form Styling */
+  .register-container {
+    background-color: #ffffff;
+    width: 600px;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Title and Description */
+  .register-title {
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .register-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .register-form {
+    width: 100%;
+  }
+  
+  .register-form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .register-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .register-input,
+  .register-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .register-input:focus,
+  .register-textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+  }
+  
+  /* Button Styling */
+  .register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .register-button:active {
+    background-color: #004080;
+    transform: scale(1);
+  }
+  
+  /* Footer Link */
+  .register-footer {
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #666;
+  }
+  
+  .register-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .register-link:hover {
+    color: #0056b3;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .register-container {
+      width: 90%; /* This will keep it responsive */
+      padding: 20px;
+    }
+  
+    .register-title {
+      font-size: 1.6rem;
+    }
+  
+  }
+  
