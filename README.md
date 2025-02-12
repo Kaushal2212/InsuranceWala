@@ -1,4 +1,4 @@
-# InsuranceWala
+# InsuranceWallah
 
 <h1 align="center">Insurance Website Project</h1>
 
